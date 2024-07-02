@@ -23,10 +23,17 @@ class DemoController extends Controller
         $request->session()->flash($request->email);
         return true;
     }
+    // middleware 
     function home() : string {
         return "home";
     }
     function home2() : string {
         return "home2";
+    }
+    function home3() : string {
+        return "home3";
+    }
+    function home4() : string {
+        return "home4";
     }
 }

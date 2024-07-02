@@ -20,7 +20,7 @@ class DemoMiddleware
             return $next($request);
         }
         else{
-            return redirect('/home2');
+            return response()->json('invalid',401);
         }
     }
 }
